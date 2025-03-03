@@ -1,5 +1,6 @@
 body{
-    background-color: rgb(78, 78, 87);
+    /* background-color: rgb(78, 78, 87); */
+    background: linear-gradient(to right, #00dbde, #fc00ff);
     color: azure;
     display: flex;
     justify-content: center;
@@ -13,7 +14,10 @@ body{
     width: 80%;
     max-width: 650px;
     margin: 0 auto;
-    background-color:  rgb(117, 117, 125);
+    /* background-color:  rgb(117, 117, 125); */
+    background-color: transparent;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; 
     padding: 20px;
     border-radius: 10px;
 }
@@ -36,10 +40,12 @@ h2{
 #countdown div{
     text-align: center;
     padding: 30px;
-    background: #dad7d7;
-    border-radius: 5px;
-    
-    color: black;
+    /* background: #dad7d7; */
+    background-color: transparent;
+    box-shadow: 0 5px 45px rgba(0, 0, 0, 0.5);
+    border-radius: 10px; 
+    /* color: black; */
+    color: white;
     display: flex;
     flex-direction: row;
 }
