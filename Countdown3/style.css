@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to right, #00dbde, #fc00ff); 
+    color: white;
+}
+
+h2{
+    font-size: 3rem;
+    margin-bottom: 27px;
+}
+
+.countdown{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 40px;
+    backdrop-filter: blur(25px);
+}
+
+.timer{
+    background-color: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    padding: 30px;
+    margin: 0 20px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    min-width: 100px;
+    max-width: 160px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.timer .time{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.timer .lable{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+}
+
+.timer:hover{
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    background: linear-gradient(to right, #00dbde, #fc00ff); 
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1024px){
+    h2{
+        font-size: 37px;
+        flex-wrap: wrap;
+       
+    }
+
+    .countdown{
+        flex-wrap: wrap;
+    }
+
+    .timer{
+        max-height: 130px;
+        margin: 20px;
+        font-size: 1rem;
+    }
+
+    .timer .time{
+        font-size: 2rem;
+    }
+
+    .timer .lable{
+        font-size: 1rem;
+    }
+    
+}
